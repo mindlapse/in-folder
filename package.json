@@ -1,0 +1,32 @@
+{
+  "name": "in-folder",
+  "version": "1.0.0",
+  "author": "David MacDonald <mindlapse@gmail.com>",
+  "license": "MIT",
+  "repository": "mindlapse/in-folder",
+  "keywords": [
+    "cwd",
+    "folder",
+    "process",
+    "micropackage",
+    "change",
+    "directory",
+    "dir"
+  ],
+  "engines": {
+    "node": ">= 7.7.2"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "coverage": "rm -rf .yarnclean && node_modules/.bin/babel-node node_modules/.bin/isparta cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec test/*.spec.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-env": "^1.2.1",
+    "babel-register": "^6.23.0",
+    "chai": "^3.5.0",
+    "isparta": "^4.0.0",
+    "istanbul": "0.4.4",
+    "mocha": "^3.2.0"
+  }
+}
