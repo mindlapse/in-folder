@@ -1,11 +1,11 @@
+# in-folder (a micropackage)
+Temporarily change directories to run a callback
+
   [![NPM Version][npm-image]][npm-url]
   [![Linux Build][travis-image]][travis-url]
   [![Windows Build][appveyor-image]][appveyor-url]
   [![Test Coverage][coveralls-image]][coveralls-url]
   
-# in-folder (a micropackage)
-Temporarily switch to a folder and run a callback there
-
 
 ```javascript
 let inside = require('in-folder')
@@ -26,7 +26,9 @@ Folder: /var
 ```
 
 ## Notes
-* You can also return promises from within the callback and they will be returned by in-folder.
+* Promises, if returned within the callback, will be resolved and returned by in-folder.
+* Supports relative and absolute paths
+* Uses [process.chdir](https://nodejs.org/api/process.html#process_process_chdir_directory) to change folders
 
 ## License
 
