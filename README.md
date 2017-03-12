@@ -9,8 +9,7 @@ Temporarily switch to a folder and run a callback there
 
 
 ```javascript
-
-import inside from 'in-folder'
+let inside = require('in-folder')
 
 let showFolder = () => console.log("Folder: " + process.pwd())
 

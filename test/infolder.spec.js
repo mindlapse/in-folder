@@ -1,5 +1,5 @@
 let path = require("path")
-let inside = require("../in-folder")
+let inside = require("../index")
 require("chai").should()
 
 
