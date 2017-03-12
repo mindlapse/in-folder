@@ -7,6 +7,13 @@ Temporarily change directories to run a callback
   [![Test Coverage][coveralls-image]][coveralls-url]
   
 
+### Installation
+```
+npm install in-folder
+```
+
+### Usage
+
 ```javascript
 let inside = require('in-folder')
 
@@ -25,12 +32,12 @@ Folder: /var/lib
 Folder: /var
 ```
 
-## Notes
+### Notes
 * Promises, if returned within the callback, will be resolved and returned by in-folder.
 * Supports relative and absolute paths
 * Uses [process.chdir](https://nodejs.org/api/process.html#process_process_chdir_directory) to change folders
 
-## License
+### License
 
 [MIT](LICENSE)
 
