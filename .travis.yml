@@ -18,5 +18,5 @@ before_install:
   # Update Node.js modules
   - "test ! -d node_modules || npm prune"
   - "test ! -d node_modules || npm rebuild"
-script: "npm run test-ci"
+script: "yarn run coverage"
 after_script: "cat ./coverage/lcov.info | coveralls"
