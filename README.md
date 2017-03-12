@@ -2,7 +2,7 @@
 Temporarily switch to a folder and run a callback there
 
 
-```.javascript 1.8
+```
 
 import inside from 'in-folder'
 
@@ -11,7 +11,6 @@ let showFolder = () => console.log("Folder: " + process.pwd())
 showFolder()
 inside("lib", showFolder)
 showFolder()
-
 
 ```
 
