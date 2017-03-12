@@ -2,7 +2,8 @@
   [![NPM Downloads][downloads-image]][downloads-url]
   [![Linux Build][travis-image]][travis-url]
   [![Windows Build][appveyor-image]][appveyor-url]
-
+  [![Test Coverage][coveralls-image]][coveralls-url]
+  
 # in-folder (a micropackage)
 Temporarily switch to a folder and run a callback there
 
@@ -41,3 +42,5 @@ Folder: /var
 [travis-url]: https://travis-ci.org/mindlapse/in-folder
 [appveyor-image]: https://img.shields.io/appveyor/ci/mindlapse/in-folder/master.svg?label=windows
 [appveyor-url]: https://ci.appveyor.com/project/mindlapse/in-folder
+[coveralls-image]: https://img.shields.io/coveralls/mindlapse/in-folder/master.svg
+[coveralls-url]: https://coveralls.io/r/mindlapse/in-folder?branch=master
