@@ -1,5 +1,4 @@
   [![NPM Version][npm-image]][npm-url]
-  [![NPM Downloads][downloads-image]][downloads-url]
   [![Linux Build][travis-image]][travis-url]
   [![Windows Build][appveyor-image]][appveyor-url]
   [![Test Coverage][coveralls-image]][coveralls-url]
@@ -33,7 +32,7 @@ Folder: /var
 
 [MIT](LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/in-folder.svg
+[npm-image]: https://img.shields.io/npm/v/in-folder.svg?label=stable
 [npm-url]: https://npmjs.org/package/in-folder
 [downloads-image]: https://img.shields.io/npm/dm/in-folder.svg
 [downloads-url]: https://npmjs.org/package/in-folder
