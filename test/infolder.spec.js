@@ -1,3 +1,4 @@
+let path = require("path")
 let inside = require("../in-folder")
 require("chai").should()
 
@@ -14,7 +15,7 @@ describe("inside", () => {
     it("should change folders", async () => {
         let cwd = process.cwd()
         await inside('test', () => {
-            (cwd + "/test").should.equal(process.cwd())
+            path.join(cwd, "test").should.equal(process.cwd())
         })
 
     })
@@ -22,7 +23,7 @@ describe("inside", () => {
     it("should change back to the original folder after", async () => {
         let cwd = process.cwd()
         await inside('test', () => {
-            (cwd + "/test").should.equal(process.cwd())
+            path.join(cwd, "test").should.equal(process.cwd())
         })
         cwd.should.equal(process.cwd())
     })
@@ -32,7 +33,7 @@ describe("inside", () => {
         let exceptionCaught = false
         try {
             await inside('test', () => {
-                (cwd + "/test").should.equal(process.cwd())
+                path.join(cwd, "test").should.equal(process.cwd())
                 throw Exception("problemo")
             })
         } catch (e) {
